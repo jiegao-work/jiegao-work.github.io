@@ -1,6 +1,6 @@
 # Jie Gao · Academic Homepage
 
-Live website: https://jg0222123-max.github.io/Academic-Materials/
+Live website: https://jg0222123-max.github.io/
 
 A bilingual academic website with research areas, publications, projects, education, honors, academic service, and a printable CV.
 
