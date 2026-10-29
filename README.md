@@ -1,17 +1,17 @@
 # Jie Gao · Academic Homepage
 
-Bilingual academic website of Jie Gao, Associate Research Fellow at Tianjin Normal University.
+Live website: https://jg0222123-max.github.io/Academic-Materials/
 
-## Website
+A bilingual academic website with research areas, publications, projects, education, honors, academic service, and a printable CV.
 
-The prepared GitHub Pages address is https://jg0222123-max.github.io/Academic-Materials/ . It becomes available after GitHub Pages is enabled and its first build succeeds.
+## Editing
 
-## One-time publishing setup
+- `index.html`: homepage, biography, metadata, and bilingual static text
+- `docs/profile.js`: publications, education, projects, awards, software, and presentations
+- `docs/style.css`: responsive and print layout
+- `docs/app.js`: language switching, paper filters, search, and browser interactions
+- `docs/assets/`: optimized portrait and favicon
 
-In repository Settings → Pages → Build and deployment, choose **Deploy from a branch**, branch **main**, folder **/docs**, and Save. Wait for GitHub to show the published site URL and a successful deployment.
+The existing GitHub Pages configuration publishes the root of `main`. `.nojekyll` serves the files directly without a build step. Changes on `main` publish automatically after the Pages build succeeds.
 
-## Content
-
-Website files live in `docs/`. Edit `docs/profile.js` for publications, education, projects, awards, software, and presentations. Edit bilingual text in `docs/index.html` for the biography and other static copy. No build tools or ChatGPT sign-in are required by the site code.
-
-The academic CV is available at `?view=cv` and can be printed to PDF.
+The academic CV is available at `?view=cv`. The website uses relative local assets and system fonts; it requires no ChatGPT account or external JavaScript libraries.
