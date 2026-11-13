@@ -67,3 +67,15 @@ body{padding-top:68px!important}html{scroll-padding-top:90px}
 @media(max-width:700px){body{padding-top:60px!important}html{scroll-padding-top:80px}.header{height:60px!important;padding:0 12px!important;gap:0 12px!important}.header .nav-portrait{width:32px;height:32px}.header .brand{gap:7px}.header .brand-name{font-size:16px}.header nav,.menu-open .header nav{height:42px!important;gap:18px!important}.header nav a,.menu-open .header nav a{font-size:13px;line-height:20px;padding:7px 0}.header-actions #language{font-size:11px;padding:5px 7px}}
 .cv{padding-top:0!important}.cv .header{display:none!important}
 @media print{body{padding-top:0!important}.header{display:none!important}}
+
+/* Fine typography and centered navigation. */
+.timeline .institution{font-size:16px}
+.pub-meta>span:first-child{font-size:16px}
+.header{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
+.header nav,.menu-open .header nav{width:max-content;max-width:100%;justify-content:safe center;gap:32px!important}
+.header .brand-name{white-space:nowrap}
+@media(max-width:1200px){.header .brand-sub{display:none}}
+@media(max-width:1100px){.header nav,.menu-open .header nav{gap:28px!important}}
+@media(max-width:1000px){.header{grid-template-columns:max-content minmax(0,1fr) max-content}.header nav,.menu-open .header nav{width:100%}}
+@media(max-width:700px){.timeline .institution{font-size:15px}.pub-meta>span:first-child{font-size:15px}.header nav,.menu-open .header nav{gap:22px!important}}
+@media print{.timeline .institution,.pub-meta>span:first-child{font-size:12px}}
