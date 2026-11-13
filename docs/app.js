@@ -35,9 +35,6 @@ function render() {
 $('#language').addEventListener('click',() => { lang = lang === 'en' ? 'zh' : 'en'; try { localStorage.setItem('jg-language',lang); } catch {} render(); });
 document.querySelectorAll('[data-filter]').forEach(el => el.addEventListener('click',() => { filter = el.dataset.filter; pubs(); }));
 $('#search').addEventListener('input',pubs);
-$('#menu').addEventListener('click',() => { const open = document.body.classList.toggle('menu-open'); $('#menu').setAttribute('aria-expanded',String(open)); $('#menu').setAttribute('aria-label',open ? 'Close menu' : 'Open menu'); $('#menu').textContent = open ? '×' : '☰'; });
-document.querySelectorAll('nav a').forEach(el => el.addEventListener('click',() => { document.body.classList.remove('menu-open'); $('#menu').setAttribute('aria-expanded','false'); $('#menu').textContent = '☰'; }));
-document.addEventListener('keydown',e => { if(e.key === 'Escape' && document.body.classList.contains('menu-open')) $('#menu').click(); });
 $('#copy-email').addEventListener('click',async () => { try { await navigator.clipboard.writeText('jiegao@tjnu.edu.cn'); $('#copy-status').textContent = tr('Email copied.','邮箱已复制。'); } catch { $('#copy-status').textContent = tr('Email: jiegao@tjnu.edu.cn — select and copy the address above.','邮箱：jiegao@tjnu.edu.cn，请选中上方地址复制。'); } });
 $('#print-cv').addEventListener('click',() => window.print());
 render();

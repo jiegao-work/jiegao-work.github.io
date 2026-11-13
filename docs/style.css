@@ -39,3 +39,20 @@ html[lang="zh-CN"] .hero h1{font-family:var(--sans);font-size:78px;font-weight:5
 @media print{body{padding-top:0}.header{display:none!important}.paper-figure,.paper-finding{display:none}.pub-body{display:block!important}.section-heading h2{font-size:25px}.section-label{font-size:11px}.hero{border:none}.research-section{background:white}.research-grid p{font-size:11px}}
 .cv .hero .portrait{height:175px;max-width:140px}.cv .hero .hero-statement{font-size:22px}
 
+/* Always-visible two-row identity and navigation bar. */
+:root{--paper:#fff;--sage:#edf5ee;--soft-green:#edf5ee;--accent:#89a58e}
+body{background:#fff;padding-top:120px!important}html{scroll-padding-top:142px}
+.header{position:fixed!important;top:0!important;left:0!important;right:0!important;z-index:1000!important;display:grid!important;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:64px 44px;grid-template-areas:"brand controls" "navigation navigation";height:120px!important;padding:6px max(24px,calc((100vw - 1240px)/2))!important;gap:0 16px!important;background:#fff!important;border-bottom:1px solid #cfded1;backdrop-filter:none}
+.header .brand{grid-area:brand;justify-self:start;min-width:0}.header .header-actions{grid-area:controls;justify-self:end}.header .brand-sub{color:#617266}
+.header nav,.menu-open .header nav{grid-area:navigation;display:grid!important;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px!important;position:static!important;width:100%;height:44px;margin:0;padding:0!important;align-items:center;background:#fff!important;border-top:1px solid #e7eee8;border-bottom:0;box-shadow:none;overflow:visible!important}
+.header nav a,.menu-open .header nav a,.header nav a[href="#experience"]{display:block!important;visibility:visible!important;text-align:center;white-space:nowrap;padding:7px 2px;font-size:13px;line-height:22px;border-radius:0;min-width:0}
+.header nav a.current{color:#203f38;border-bottom-color:#547e5c;background:#f0f6f0}.header #menu{display:none!important}
+.hero,#publications{background:#fff}.about,#projects,#community{background:var(--soft-green);box-shadow:0 0 0 100vmax var(--soft-green);clip-path:inset(0 -100vmax)}
+.experience-section,.award-section{background:#fff}.research-section{background:var(--soft-green)}
+.contact-section{background:#fff;color:var(--ink);border-top:1px solid var(--line)}.contact-section .section-label,.contact-section .section-label>span:first-child,.contact-grid>div>p,.contact-links a,.contact-links button,footer{color:var(--text)}.contact-links a,.contact-links button{border-bottom-color:#9eb7a1}footer{border-top-color:var(--line)}
+.expanded-group{border-top:1px solid var(--line);border-bottom:0;margin-top:30px;padding-top:22px}.expanded-group .group-heading{font-family:var(--sans);font-weight:600;font-size:18px;line-height:1.5;margin:0 0 18px;cursor:default}.expanded-group.under-review p{font-size:12px;line-height:1.85;margin-bottom:12px}.expanded-group .detail-row:first-child{border-top:0}.grants{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
+.publication h3,.cv .publication h3{font-family:var(--sans);font-weight:500;font-size:20px;line-height:1.55;letter-spacing:0}.pub-meta>span:first-child{font-family:var(--sans)}
+@media(max-width:700px){body{padding-top:156px!important}html{scroll-padding-top:174px}.header{height:156px!important;grid-template-rows:60px 80px;padding:8px 16px!important;gap:0 12px!important}.header nav,.menu-open .header nav{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:2px 8px!important;height:80px!important}.header nav a,.menu-open .header nav a{font-size:12px;padding:5px 1px;line-height:22px}.header .nav-portrait{width:36px;height:36px}.header .brand-sub{font-size:8px}.header .brand-name{font-size:18px}.grants{grid-template-columns:1fr;gap:26px}.publication h3{font-size:19px}.expanded-group .group-heading{font-size:17px}}
+.cv{padding-top:0!important}.cv .header{display:none!important}
+@media print{body{padding-top:0!important}.header{display:none!important}.about,#projects,#community{box-shadow:none;clip-path:none}.publication h3,.cv .publication h3{font-family:var(--sans);font-size:16px}}
+
