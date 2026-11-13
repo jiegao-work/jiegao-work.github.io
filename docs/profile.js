@@ -59,3 +59,9 @@ window.profile = {
   ]
 };
 
+
+// Figure numbers refer to the linked published papers supplied by the author.
+Object.assign(window.profile.publications.find(p => p.doi === '10.1038/s41467-024-48793-1'), {"figure":"docs/assets/global-sulfate-pathways.jpg","figureWidth":1100,"figureHeight":614,"figureEn":"Fig. 1 · Global sulfate formation pathways","figureZh":"图1 · 全球硫酸盐生成途径","findingEn":"Global simulations identify H₂O₂ oxidation as the predominant aqueous sulfate pathway, with regional and seasonal differences.","findingZh":"全球模拟识别了H₂O₂液相氧化的主导作用及不同途径的区域、季节差异。"});
+Object.assign(window.profile.publications.find(p => p.doi === '10.1021/acs.est.4c13744'), {"figure":"docs/assets/aerosol-buffering.jpg","figureWidth":680,"figureHeight":532,"figureEn":"Fig. 4 · Buffering and pathway stability","figureZh":"图4 · 缓冲效应与生成途径稳定性","findingEn":"Multiphase buffering helps explain aerosol pH responses and the conditions under which sulfate pathways may shift.","findingZh":"多相缓冲效应解释了气溶胶pH对酸碱变化的响应，以及硫酸盐生成途径可能发生转变的条件。"});
+Object.assign(window.profile.publications.find(p => p.doi === '10.1021/acs.est.2c01739'), {"figure":"docs/assets/sulfate-control-scenarios.jpg","figureWidth":1100,"figureHeight":806,"figureEn":"Fig. 5 · Oxidant–SO₂ control scenarios","figureZh":"图5 · 氧化剂与SO₂协同控制情景","findingEn":"Oxidant–SO₂ scenarios compare different routes to sulfate mitigation.","findingZh":"通过氧化剂与SO₂控制情景，比较实现硫酸盐减排的不同途径。"});
+
