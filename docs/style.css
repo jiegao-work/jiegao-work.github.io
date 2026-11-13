@@ -79,3 +79,12 @@ body{padding-top:68px!important}html{scroll-padding-top:90px}
 @media(max-width:1000px){.header{grid-template-columns:max-content minmax(0,1fr) max-content}.header nav,.menu-open .header nav{width:100%}}
 @media(max-width:700px){.timeline .institution{font-size:15px}.pub-meta>span:first-child{font-size:15px}.header nav,.menu-open .header nav{gap:22px!important}}
 @media print{.timeline .institution,.pub-meta>span:first-child{font-size:12px}}
+
+/* Readable text for supporting projects, software and presentations. */
+@media screen{
+.team-projects .group-heading,#community .more-content .group-heading{font-size:20px}
+:is(#team-project-list,#software,#talks) .detail-row h4{font-size:16px;line-height:1.6}
+:is(#team-project-list,#software,#talks) .detail-row p{font-size:15px;line-height:1.85}
+:is(#team-project-list,#software,#talks) .detail-row .mono{font-size:12px;line-height:1.7;letter-spacing:.02em}
+#software .detail-row .fine{font-size:12px!important;overflow-wrap:anywhere}
+}
